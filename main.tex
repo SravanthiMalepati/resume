@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Sravanthi Malepati
+% Based off of: https://github.com/sravanthi-gsu/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Sravanthi Malepati} \\ \vspace{1pt}
+    \small 408-310-3302 $|$ \href{mailto:x@x.com}{{smalepati1@student.gsu.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{{linkedin.com/in/sravanthi-malepati}} $|$     \href{http://www.sravanthimalepati.com/}{{www.sravanthimalepati.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia State University}{Atlanta, GA}
+      {Master of Science in Computer Science; GPA: 3.76}{Jan. 2020 -- Dec. 2021}
+     %\resumeItem{Course Work: Parallel algorithms, Semantic Web, Machine Learning, Advanced Software Engineering, Web Programming, Cryptography  }
+    \resumeSubheading
+      {RVR \& JC College of Engineering }{Andhra Pradesh, IN}
+      {Bachelor of Technology in Computer Science; GPA: 3.7 (9.03/10.0)}{Aug. 2014 -- June. 2018}
+      % \resumeItem{Course Work: Data Structures, Design and Analysis of Algorithms, Database Management Systems, Operating Systems, Data Mining}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Georgia State University}{Atlanta, GA}
+      {Graduate Research \& Teaching Assistant}{Jan. 2020 -- Present}
+      
+      \resumeItemListStart
+        \resumeItem{Working as a web developer and content manager, where my responsibilities include developing new components and building web pages using HTML/CSS, JavaScript, and PHP.}
+        \resumeItem{Maintaining Smartworld 2021: The 7th IEEE Smart World Congress, Atlanta Website.}
+        \resumeItem{Worked on analyzing publications data from Web of Science's website using Python and assist in developing statistical models for automation using R.}
+        \resumeItem{Worked as a Graduate Teaching Assistant in designing and evaluating the data mining projects using Python Language for graduate and undergraduate students. Hosted weekly recitations and office hours to offer support to students.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+    {Assistant System Engineer, TATA Consultancy Services}{Bangalore, IN}
+    {CyberArk Password Vault \& Microsoft Bit locker Administration and Monitoring}{June. 2018 -- Dec. 2019}
+      \resumeItemListStart
+        \resumeItem{On-boarded accounts using Password Upload Utility and created safe(vault) for different client stakeholders and updated management policy \& password policy and integrated using the \textbf{Password Vault} tool.}
+        \resumeItem{Handled IT requests related to new account creations, resolved password synchronization failures, and executed SLA changes using the \textbf{ServiceNow} tool by performing a health check on CyberArk servers.}
+        \resumeItem{Built custom \textbf{PowerShell} scripts on the client’s server to automate bulk accounts on-boarding.}
+        \resumeItem{Managed the security protocol for more than 100K client devices using MBAM centralized console by maintaining encryption compliance over 99\%.}
+        \resumeItem{Custom build MBAM server architecture with a disaster recovery mechanism as per the client’s requirements.}
+        \resumeItem{Coordinated with the team \textbf{Data Migration} activity for the data stored in the devices from one data center to
+another.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Software Developer Intern }{Visakhapatnam, IN}
+      {Smart Village Project(University of California, Berkeley \& Govt. Of AP) }{May 2017 -- July 2017}
+      
+      \resumeItemListStart
+        \resumeItem{Developed a static website for the project using essential web development tools (HTML, CSS \& JSS)}
+        \resumeItem{Performed data analysis for survey data collected using Python libraries and developed a dynamic dashboard to understand the village’s demographics.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+       {\textbf{ADHD Classification using Neural Networks}}{\textbf {LSTM, niLearn, NumPy, Keras}}
+        
+            \resumeItem{A classification significance of rs-fMRI Data to build Neural Network Models using python libraries.}
+         
+        \resumeProjectHeading
+          {\textbf{Secure Chat Room Application}} {\textbf {Java API, Servlets, KeyStore’s}}
+          
+            \resumeItem{Developed a secure chatroom application with authentication and privacy for message transfer.}
+          
+      \resumeProjectHeading
+          {\textbf{Continuous Top-k Monitoring on Document Streams}} 
+          {\textbf{Java (Spring Boot), Rest API, JSP}}
+            \resumeItem{Designed and created a program to support large numbers of users and high stream rates while refreshing the important keywords instantaneously using ID-Ordering techniques for query processing.}
+          
+          \resumeProjectHeading
+          {\textbf{Online Movie Ticket Management}} {\textbf{HTML/CSS, JavaScript, MySQL, XAMPP server, Bootstrap}}
+            \resumeItem{Developed a web application to reserve movie tickets and maintain the customer’s records using web development tools.}
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Python, Java, C/C++, J2EE, HTML/CSS, JavaScript, SQL (MSSQL, MySQL)} \\
+     \textbf{Technologies}{: Angular, Bootstrap, Servlets, JDBC, RESTful Webservices, Spring MVC, XML, Android} \\
+     \textbf{Tools}{: Microsoft Office, Service Now, Git, JIRA, Visual Studio, Eclipse, Tableau, Jupyter} \\
+     %\textbf{Technologies}{: Python, Java, C/C++, J2EE, HTML/CSS, JavaScript, SQL (MySQL), Hadoop, Big Data, Apache Spark, React, Node.js, Android, WordPress, JDBC, RESTful Webservices, Bootstrap, Microsoft Office, Git, Visual Studio, Eclipse, Tableau, Jupyter } \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
